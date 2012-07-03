@@ -5,7 +5,7 @@ gem 'sqlite3'
 gem "mysql2"
 
 gem "json"
-gem "jquery-rails"
+gem "jquery-rails", "1.0.19"
 gem 'nokogiri'
 gem 'fastercsv'
 gem 'geocoder'
