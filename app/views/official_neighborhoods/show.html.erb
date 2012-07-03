@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name en:</b>
+  <%= @official_neighborhood.name_en %>
+</p>
+
+<p>
+  <b>Name ka:</b>
+  <%= @official_neighborhood.name_ka %>
+</p>
+
+<p>
+  <b>Citydistrictid:</b>
+  <%= @official_neighborhood.cityDistrictID %>
+</p>
+
+<p>
+  <b>Cityid:</b>
+  <%= @official_neighborhood.cityID %>
+</p>
+
+<p>
+  <b>Districtid:</b>
+  <%= @official_neighborhood.districtID %>
+</p>
+
+<p>
+  <b>Regionid:</b>
+  <%= @official_neighborhood.regionID %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @official_neighborhood.lat %>
+</p>
+
+<p>
+  <b>Lon:</b>
+  <%= @official_neighborhood.lon %>
+</p>
+
+
+<%= link_to 'Edit', edit_official_neighborhood_path(@official_neighborhood) %> |
+<%= link_to 'Back', official_neighborhoods_path %>

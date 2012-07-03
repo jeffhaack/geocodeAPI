@@ -1,0 +1,3 @@
+Beginning search() method on string 'asatiani, tbilisi'
+Appling the purify() method to search string.  String is now 'asatiani tbilisi'
+Latin morphing and splitting search term into array: [asatiani, tbilisi]

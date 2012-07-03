@@ -1,0 +1,41 @@
+<%= form_for(@settlement) do |f| %>
+  <% if @settlement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@settlement.errors.count, "error") %> prohibited this settlement from being saved:</h2>
+
+      <ul>
+      <% @settlement.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name_en %><br />
+    <%= f.text_field :name_en %>
+  </div>
+  <div class="field">
+    <%= f.label :name_ka %><br />
+    <%= f.text_field :name_ka %>
+  </div>
+  <div class="field">
+    <%= f.label :districtID %><br />
+    <%= f.number_field :districtID %>
+  </div>
+  <div class="field">
+    <%= f.label :regionID %><br />
+    <%= f.number_field :regionID %>
+  </div>
+  <div class="field">
+    <%= f.label :lat %><br />
+    <%= f.text_field :lat %>
+  </div>
+  <div class="field">
+    <%= f.label :lon %><br />
+    <%= f.text_field :lon %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

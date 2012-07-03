@@ -1,0 +1,12 @@
+Step 1 Completed Successfully - Cleared empty parameters and nil values
+Parameters submitted are {"street"=>"khevsureti", "street_type"=>"q.", "settlement"=>"Tbilisi"}
+
+Step 2 Completed Successfully - Purified search terms
+Parameters are now are {"street"=>"khevsureti", "street_type"=>"q ", "settlement"=>"tbilisi"}
+
+Processing Step 3... - (Get hits for each parameter and implied weights)
+Settlement Hits are {74=>20, 2642=>20}
+Street Hits are {686=>17, 736=>17}
+
+Step 4 Completed - Algorithm is looking for a STREET
+Step 4f Completed - We hit Khevsureti St, Tbilisi with a weight of 37

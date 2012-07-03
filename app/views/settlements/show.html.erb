@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name en:</b>
+  <%= @settlement.name_en %>
+</p>
+
+<p>
+  <b>Name ka:</b>
+  <%= @settlement.name_ka %>
+</p>
+
+<p>
+  <b>Districtid:</b>
+  <%= @settlement.districtID %>
+</p>
+
+<p>
+  <b>Regionid:</b>
+  <%= @settlement.regionID %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @settlement.lat %>
+</p>
+
+<p>
+  <b>Lon:</b>
+  <%= @settlement.lon %>
+</p>
+
+
+<%= link_to 'Edit', edit_settlement_path(@settlement) %> |
+<%= link_to 'Back', settlements_path %>

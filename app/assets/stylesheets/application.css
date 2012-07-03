@@ -5,3 +5,127 @@
  *= require_self
  *= require_tree . 
 */
+
+/* Structure and Layout
+--------------------------------------- */
+body {
+  font-family: Calibri, Georgia, Helvetica, Verdana, Times, sans-serif;
+  text-align:left;
+  font-size: 87.5%;
+  line-height: 2em;
+  background: #ddddff;
+  color: #111;
+  }
+
+.test {
+	background: #ffaaaa;
+}
+
+.test2 {
+	background: #aaaaff;
+}
+
+#header, #header a {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:0px;
+  margin-bottom:15px;
+  padding-top:6px;
+  background: #333;
+  color: #eee;
+  height: 2.5em;
+}
+
+#header #user_bar {
+  text-align: left;
+}
+
+#header #menu, #header #menu a {
+  text-align: center;
+}
+
+#menu a {
+  margin-left:5px;
+  margin-right:5px;
+  font-size:98%;
+  text-decoration: none;
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:30px;
+  margin-bottom:5px;
+  width: 780px;
+  height: 310px;
+  padding: 0.5em 0 1.5em 0;
+  /*border:1px solid red;*/
+}
+
+#map_canvas {
+  width:700px;
+  height:350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  display: block;
+}
+
+.search {
+  font-style:bold;
+  margin-left: auto;
+  margin-right: auto;
+  line-height:3em;
+  display: block;
+  clear: both;
+  font-size:1.2em;
+  border-top: 1px solid #99e
+}
+
+.search .search_term
+{
+  float:left;
+}
+
+.search .search_result
+{
+  float:right;
+}
+
+
+
+#map_a, #map_b {
+  width:350px;
+  height:270px;
+  background:#fff;
+  float:left;
+  padding:15px;
+  box-shadow: 1px 1px 2px 1px #777;
+  font-size: 1.2em;
+  line-height:1.5em;
+  font-style:bold;
+  margin-bottom:30px;
+}
+
+#map_b {
+  float: right;
+}
+
+#map_a ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0;
+  font-weight: bold;
+}
+
+#map_a li {
+  list-style: none;
+  margin-left:0px;
+}
+
+#map_a li>a, #map_a li>a:link, #map_a li>a:visited {
+  color: #000;
+  font-size: 1.1em;
+  text-decoration: none;
+  display: inline;
+}

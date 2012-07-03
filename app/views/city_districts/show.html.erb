@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name en:</b>
+  <%= @city_district.name_en %>
+</p>
+
+<p>
+  <b>Name ka:</b>
+  <%= @city_district.name_ka %>
+</p>
+
+<p>
+  <b>Cityid:</b>
+  <%= @city_district.cityID %>
+</p>
+
+<p>
+  <b>Districtid:</b>
+  <%= @city_district.districtID %>
+</p>
+
+<p>
+  <b>Regionid:</b>
+  <%= @city_district.regionID %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @city_district.lat %>
+</p>
+
+<p>
+  <b>Lon:</b>
+  <%= @city_district.lon %>
+</p>
+
+
+<%= link_to 'Edit', edit_city_district_path(@city_district) %> |
+<%= link_to 'Back', city_districts_path %>

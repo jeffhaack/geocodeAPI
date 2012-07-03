@@ -1,0 +1,5 @@
+production:
+  adapter: mysql2
+  database: 
+  pool: 
+  timeout: 5000

@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name en:</b>
+  <%= @street.full_name_en %>
+</p>
+
+<p>
+  <b>Name ka:</b>
+  <%= @street.full_name_ka %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @street.lat %>
+</p>
+
+<p>
+  <b>Lon:</b>
+  <%= @street.lon %>
+</p>
+
+<div id="map_canvas" ></div>
+
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBTItXCdVBstzYcH_7INBg__mYZ5A_AMrQ&sensor=false">
+    </script>
+    <script type="text/javascript">
+
+      function initialize() {
+        var myOptions = {
+          center: new google.maps.LatLng(<%= @street.lat %>, <%= @street.lon %>),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+        };
+
+
+
+        map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+    }
+
+    </script>
+
+<script type="text/javascript">
+  map = document.getElementById("map_canvas");
+  center = new google.maps.LatLng(<%= @street.lon %>,<%= @street.lat %>);
+  alert(center)
+  map.setCenter(center);
+  alert('mm')
+  map.setZoom(16);
+
+  var marker = new google.maps.Marker({
+    position: center,
+    map: map
+  });
+</script>
+
+<p>
+  <b>Addresses:</b>
+  <%= @street.addresses %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_street_path(@street) %> |
+<%= link_to 'Back', streets_path %>

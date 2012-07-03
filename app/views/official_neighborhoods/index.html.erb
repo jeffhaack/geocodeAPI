@@ -1,0 +1,37 @@
+<h1>Listing official_neighborhoods</h1>
+
+<table>
+  <tr>
+    <th>Name en</th>
+    <th>Name ka</th>
+    <th>City District</th>
+    <th>Settlement</th>
+    <th>District</th>
+    <th>Region</th>
+    <th>Lat</th>
+    <th>Lon</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @official_neighborhoods.each do |official_neighborhood| %>
+  <tr>
+    <td><%= official_neighborhood.name_en %></td>
+    <td><%= official_neighborhood.name_ka %></td>
+    <td><%= official_neighborhood.city_district.name_en %></td>
+    <td><%= official_neighborhood.settlement.name_en %></td>
+    <td><%= official_neighborhood.district.name_en %></td>
+    <td><%= official_neighborhood.region.name_en %></td>
+    <td><%= official_neighborhood.lat %></td>
+    <td><%= official_neighborhood.lon %></td>
+    <td><%= link_to 'Show', official_neighborhood %></td>
+    <td><%= link_to 'Edit', edit_official_neighborhood_path(official_neighborhood) %></td>
+    <td><%= link_to 'Destroy', official_neighborhood, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Official neighborhood', new_official_neighborhood_path %>

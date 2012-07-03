@@ -1,0 +1,9 @@
+$('#searches').prepend("<%= escape_javascript(render(@search)) %>");
+
+<% if @result.class == Street || @result.class == Address %>
+setMap(<%= @result.lat %>, <%= @result.lon %>, 16);
+<% else %>
+setMap(<%= @result.lat %>, <%= @result.lon %>, 11);
+<% end %>
+
+$('#search_field').val("");

@@ -1,0 +1,57 @@
+<div id="container">
+
+<h1>The Georgia Geocoding API</h1>
+
+link to sections
+
+<h2>What is geocoding?</h2>
+<p>Geocoding is the process of converting address strings into geographic coordinates. For example, "19 Rustaveli Ave, Tbilisi" into longitude 44.797 and latitude 41.7.</p>
+
+<h2>How is this API different from geocoding API's like Google Maps API?</h2>
+<p>This API is specifically designed to geocode addresses in the country of Georgia.  Because large map services, such as Google, Microsoft, and OpenStreetMap have insufficient data for Georgia this API currently functions better.  The API is designed to be similar to Google's geocoding API, but works better with both English and Georgian languages and allows the geolocating of building numbers.  In short, it works!</p>
+
+<h2>Usage limitations</h2>
+<p>Users of the API are currently limited to 1000 geolocaton requests per day.</p>
+
+<h2>How can I use it?</h2>
+<p>Using the API is possible once you <a href="/get_key">get your own API key</a>. Then you can make geocoding requests like this:</p>
+
+<div class="code">http://maps.kartulia.com/api/geocode/</i>output?parameters</i></div>
+
+<p>Output will either be <i>xml</i> or <i>json</i>, depending on the type of response you require.  Responses are covered in a section below.</p>
+
+<p>Parameters may come in one of two ways. You may want to submit discrete values for different fields.  For example, you may wish to submit <i>building_number</i> as '19', <i>street</i> as 'rustaveli ave', and <i>settlement</i> as 'tbilisi'.  In this case you could submit the following request:</p>
+
+<div class="code">http://maps.kartulia.com/api/geocode/xml?<b>number=19&street=rustaveli+st&settlement=tbilisi&key=<i>YOUR_KEY_HERE</i></b></div>
+
+<p>Note that you must always include your API key in the request.</p>
+
+<p>When submitting a geocoding request with separate fields, you may submit the following parameters:</p>
+
+<ul>
+  <li>number <i>(example: 19a)</i></li>
+  <li>street <i>(example: lado+asatiani)</i></li>
+  <li>city_district <i>(example: vake+saburtalo)</i></li>
+  <li>neighborhood <i>(example: sololaki)</i></li>
+  <li>settlement <i>(example: batumi)</i></li>
+  <li>district <i>(example: senaki)</i></li>
+  <li>region <i>(example: guria)</i></li>
+</ul>
+
+<p>You may also submit your query in a single string.  For example:</p>
+
+<div class="code">http://maps.kartulia.com/api/geocode/xml?<b>address=19+rustaveli+st+tbilisi&key=<i>YOUR_KEY_HERE</i></b></div>
+
+<p>Queries submitted like this may produce slightly less accurate results and take slightly longer to process, but for certain types of applications it may be easier to submit.</p>
+
+<p>Regardless of the method that you use to submit your parameters, you must always include your API key and you will always receive a standard response based on the type of output you selected.</p>
+
+<h2>Responses</h2>
+
+asd
+asd
+sad
+asd
+
+
+</div>

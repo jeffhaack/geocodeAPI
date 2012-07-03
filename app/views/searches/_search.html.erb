@@ -1,0 +1,10 @@
+  <%= div_for search do %>
+
+<div class='search_term'> <%= link_to search.term, search %> </div>
+	<!--    <span class='actions'>
+        <%= link_to 'Delete', search, :confirm => 'Are you sure?', :method => :delete %>
+	    </span>-->
+
+<div class='search_result'> <%= search.result %> </div>
+
+  <% end %> 

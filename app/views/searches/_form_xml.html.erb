@@ -1,0 +1,24 @@
+<%= form_for(@search, :format => 'xml') do |f| %>
+
+  <% if @search.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@search.errors.count, "error") %> prohibited this search from being saved:</h2>
+
+      <ul>
+      <% @search.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <center>
+  <div class="field">
+    
+    <%= f.text_field :term, :style=>'width: 420px; height: 40px; font-size:0.8em; color:#777', :value => '19 rustaveli ave batumi georgia' %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Go', :format => 'xml', :remote => true %>
+  </div>
+  </center>
+<% end %>
